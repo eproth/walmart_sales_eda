@@ -1,7 +1,7 @@
 # Walmart Retail Sales EDA (SQLite)
 
 ## 1. Project Overview
-This project explores weekly sales data from a large retail company, Walmart, using SQLite. The objective is to analyze how internal and external factors, such as seasonality, holidays, temperature, fuel prices, CPI, and unemployment, influence revenue.
+This project explores weekly sales data from a large retail company, Walmart, using SQLite and Tableau. The objective is to analyze how internal and external factors, such as seasonality, holidays, temperature, fuel prices, CPI, and unemployment, influence revenue.
 
 The analysis focuses on identifying sales trends over time, evaluating seasonal performance, and examining the potential impact of economic indicators on store performance.
 
@@ -17,7 +17,7 @@ The dataset contains the following variables:
 - `Unemployment` – Regional unemployment rate
 
 ## 3 Data Cleaning & Preparation
-Before beginning exploratory analysis, the dataset was cleaned and standardized to ensure proper analysis and findings, which includes:
+Before beginning exploratory analysis, the dataset was cleaned and standardized to ensure proper analysis and findings, which include:
 - Verified missing values across all columns
 - Standardized date format for seasonal and yearly analysis
 - Checked for duplicate records
@@ -42,7 +42,7 @@ The following exploratory analyses were conducted using SQLite:
 
 ## 6. Key Findings
 ### 6.1. Data Cleaning
-There are no null values or duplicates presented in the dataset. Therefore, there is no data cleaning and standardization performed in this dataset, except for having the data format structured duringg seasonal analysis 
+There are no null values or duplicates presented in the dataset. Therefore, there is no data cleaning and standardization performed in this dataset, except for having the data format structured during seasonal analysis 
 
 ### 6.2. Basic Statistics
 In the dataset, we have found out about the `Sales` and `Temperature`:
@@ -73,7 +73,7 @@ Store 20 demonstrates the highest average weekly sales, followed closely by Stor
 
 While holiday periods are typically associated with increased consumer spending, the dataset suggests that non-holiday weeks generate stronger average sales performance.
 
-### 6.6. Marcoecomonic Influence (CPI and Unemployment)
+### 6.6. Macroeconomic Influence (CPI and Unemployment)
 | Store | Avg Sales    | Avg CPI | Avg Unemployment |
 | ----- | ------------ | ------- | ---------------- |
 | 20    | 2,107,676.87 | 209.04  | 7.37             |
@@ -82,7 +82,7 @@ While holiday periods are typically associated with increased consumer spending,
 | 13    | 2,003,620.31 | 128.68  | 7.00             |
 | 2     | 1,925,751.34 | 215.65  | 7.62             |
 
-There is no strong visible direct relationship between higher CPI or unemployment and sales performance. Economic indicators vary across stores but do not clearly explain differences in average weekly sales of Walmart.
+There is no strong, visible direct relationship between higher CPI or unemployment and sales performance. Economic indicators vary across stores but do not clearly explain the differences in average weekly sales of Walmart.
 
 ### 6.7. Seasonal Sales
 ```sql
@@ -110,7 +110,22 @@ ORDER BY total_sales DESC;
 
 Summer generates the highest total sales overall, while Winter shows the highest average weekly sales. This suggests seasonal demand variations, potentially influenced by holiday and end-of-year consumer behavior.
 
-## 7. Conclusion
-In conclusion, the analysis reveals the consistency of weekly sales performance with noticaable seasonal and store-level differences. While total revenue fluctuates by year, the average weekly sales of Walmart remain relatively stable. Seasonal patteerns are evident, with winter showing the highest average weekly sales and summer contributing the highest total revenue.
+### 6.8. Walmart Sales Performance Dashboard
+The dashboard provide an overall analysis of Walmart’s weekly sales performance across multiple stores, examining trends over time and the influence of external factors such as seasonality, holidays, temperature, fuel prices, and key economic indicators (CPI and unemployment).
 
-HOliday periods and macroeconomic indicators such as CPI and unemployment show limited direct impact on overall Walmart's performance. Overall, sales appear to be more strongly influenced by seasonality and store-specific factors than short-term economic changes.
+#### Dashboard Preview
+
+
+#### Key Insights
+- Sales peaked in Quarter IV 2010 and declined slightly in Quarter I 2011
+- Summer generates highest total revenue
+- Holiday weeks do not always increase sales
+- Economic indicators show weak correlation with sales
+
+#### View Dashboard
+https://public.tableau.com/views/WalmartSalesEDA/WalmartSalesPerformance?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+## 7. Conclusion
+In conclusion, the analysis reveals the consistency of weekly sales performance with noticeable seasonal and store-level differences. While total revenue fluctuates by year, the average weekly sales of Walmart remain relatively stable. Seasonal patterns are evident, with winter showing the highest average weekly sales and summer contributing the highest total revenue.
+
+Holiday periods and macroeconomic indicators such as CPI and unemployment show a limited direct impact on Walmart's overall performance. Overall, sales appear to be more strongly influenced by seasonality and store-specific factors than short-term economic changes.
