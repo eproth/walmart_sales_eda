@@ -111,18 +111,18 @@ ORDER BY total_sales DESC;
 Summer generates the highest total sales overall, while Winter shows the highest average weekly sales. This suggests seasonal demand variations, potentially influenced by holiday and end-of-year consumer behavior.
 
 ### 6.8. Walmart Sales Performance Dashboard
-The dashboard provide an overall analysis of Walmart’s weekly sales performance across multiple stores, examining trends over time and the influence of external factors such as seasonality, holidays, temperature, fuel prices, and key economic indicators (CPI and unemployment).
+The dashboard provides an overall analysis of Walmart’s weekly sales performance across multiple stores, examining trends over time and the influence of external factors such as seasonality, holidays, temperature, fuel prices, and key economic indicators (CPI and unemployment).
 
-#### Dashboard Preview
+#### Dashboard Preview:
+![Dashboard](Walmart_Dashboard.png)
 
-
-#### Key Insights
+#### Key Insights:
 - Sales peaked in Quarter IV 2010 and declined slightly in Quarter I 2011
-- Summer generates highest total revenue
+- Summer generates the highest total revenue
 - Holiday weeks do not always increase sales
 - Economic indicators show weak correlation with sales
 
-#### View Dashboard
+#### View Dashboard:
 https://public.tableau.com/views/WalmartSalesEDA/WalmartSalesPerformance?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## 7. Conclusion
